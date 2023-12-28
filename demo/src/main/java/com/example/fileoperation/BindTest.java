@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class BindTest {
     public static void main(String[] args) throws Exception{
-        FileOutputStream fileOutputStream=new FileOutputStream("/Users/yangweiyi/Desktop/miRna.txt");
+        FileOutputStream fileOutputStream=new FileOutputStream("/Users/yangweiyi/Desktop/miRna1210.txt");
         OutputStreamWriter outputStreamWriter=new OutputStreamWriter(fileOutputStream);
         String title="miRNA"+"\t"+"miRNA_DEG"+"\t"+
                 "target"+"\t"+
@@ -50,7 +50,7 @@ public class BindTest {
             }
         }
         fileInputStream.close();
-        FileInputStream resultfileInputStream=new FileInputStream("/Users/yangweiyi/Desktop/lncRNA.txt");
+        FileInputStream resultfileInputStream=new FileInputStream("/Users/yangweiyi/Desktop/miRNA_lncRNA_1210.txt");
         Scanner resultscanner=new Scanner(resultfileInputStream,"UTF-8");
         resultscanner.nextLine();
         while(resultscanner.hasNextLine()){
@@ -76,7 +76,7 @@ public class BindTest {
             }
             outputStreamWriter.flush();
         }
-        FileInputStream resultfileInputStream1=new FileInputStream("/Users/yangweiyi/Desktop/mRNA.txt");
+        FileInputStream resultfileInputStream1=new FileInputStream("/Users/yangweiyi/Desktop/mRNA_1210.txt");
         Scanner resultscanner1=new Scanner(resultfileInputStream1,"UTF-8");
         resultscanner1.nextLine();
         while(resultscanner1.hasNextLine()){
